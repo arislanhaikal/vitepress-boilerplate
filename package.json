@@ -1,0 +1,16 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Documentation for the project",
+  "author": "arislanhaikal",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.2.3"
+  }
+}
