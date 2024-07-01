@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import sidebarId from "./sidebar/id";
+import sidebarEn from "./sidebar/en";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,25 +15,6 @@ export default defineConfig({
     outline: "deep",
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "/" }],
-
-    sidebar: [
-      {
-        text: "Pendahuluan",
-        collapsed: false,
-        items: [
-          { text: "Pendahuluan 1", link: "/introduction/index1" },
-          { text: "Pendahuluan 2", link: "/introduction/index2" },
-        ],
-      },
-      {
-        text: "Dashboard",
-        collapsed: false,
-        items: [
-          { text: "Dashboard 1", link: "/dashboard/index1" },
-          { text: "Dashboard 2", link: "/dashboard/index2" },
-        ],
-      },
-    ],
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
@@ -50,10 +33,20 @@ export default defineConfig({
     root: {
       label: "Indonesia",
       lang: "id",
+      themeConfig: {
+        sidebar: {
+          "/": sidebarId,
+        },
+      },
     },
     en: {
       label: "English",
       lang: "en",
+      themeConfig: {
+        sidebar: {
+          "/en/": sidebarEn,
+        },
+      },
     },
   },
   head: [

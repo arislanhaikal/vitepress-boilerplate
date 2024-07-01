@@ -13,13 +13,14 @@ Simple Vitepress boilerplate for a documentation site include internationalizati
 
 ## File Structure
 
-- docs -> .vitepress (App settings)
+- docs -> .vitepress
 - docs -> .vitepress/config.ts (App settings)
+- docs -> .vitepress/sidebar
 - docs -> root (Home page)
 - docs -> en (English)
 
 ## How to add a new page
 
 1. Create a new markdown file in the docs folder.
-2. Add the new page to navigation menu in the appropriate config.ts file. (themeConfig -> sidebar)
+2. Add the new page to navigation menu in the `docs/.vitepress/sidebar` file.
 3. Read full documentation on [Vitepress](https://vitepress.dev/guide/what-is-vitepress)

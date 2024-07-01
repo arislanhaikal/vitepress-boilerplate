@@ -3,13 +3,13 @@
 layout: home
 
 hero:
-  name: "ID"
+  name: "EN"
   text: "Markdown to Beautiful Docs"
   tagline: My great project tagline
   actions:
     - theme: brand
       text: Read Documentation
-      link: /introduction/index1
+      link: /en/introduction/index1
   image:
     src: /logo.svg
     alt: Docs
