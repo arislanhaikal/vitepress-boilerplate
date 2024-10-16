@@ -8,10 +8,17 @@ export default defineConfig({
   titleTemplate: "Docs",
   description: "Markdown to Beautiful Docs in Minutes",
   lang: "id",
+  rewrites: {
+    "id/:rest*": ":rest*",
+  },
   cleanUrls: true,
+  metaChunk: true,
   lastUpdated: true,
   themeConfig: {
-    logo: "/logo.svg",
+    logo: {
+      light: "/logo.svg",
+      dark: "/logo-dark.svg",
+    },
     outline: "deep",
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "/" }],

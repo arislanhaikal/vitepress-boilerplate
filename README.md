@@ -16,7 +16,7 @@ Simple Vitepress boilerplate for a documentation site include internationalizati
 - docs -> .vitepress
 - docs -> .vitepress/config.ts (App settings)
 - docs -> .vitepress/sidebar
-- docs -> root (Home page)
+- docs -> id (For Root)
 - docs -> en (English)
 
 ## How to add a new page
